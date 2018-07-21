@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#546e7a</color>
+    <color name="colorPrimaryDark">#29434e</color>
+    <color name="colorAccent">#819ca9</color>
+    <color name="teal">#26a69a</color>
+    <color name="blanco">#FFF</color>
+    <color name="gris">#7e7e7e</color>
+    <color name="negro">#000000</color>
+    <color name="colorFlasheroParaBotones">#b24d0f</color>
+    <color name="colorPrimaryTransparente">#80546e7a</color>
+    <color name="negroTransparente">#df000000</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Not IMDb</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="puntajeTest">6.7</string>
+    <string name="tituloTest">Jurasick World</string>
+    <string name="descripcionTest">Tras cuatro años de abandono del complejo turístico Jurassic World, Isla Nublar sólo está habitada por los dinosaurios supervivientes. Cuando el volcán de la isla entra en erupción, Owen (Chris Pratt) y Claire (Bryce Dallas Howard) vuelven allí para rescatar a los dinosaurios de la extinción. Owen va en busca de Blue, el raptor al que crió mientras que Claire, que ha empezado a valorar a estas criaturas, se centra más en salvar al resto. Cuando llegan a la isla descubren una conspiración que pretende llevar al planeta de nuevo a la era prehistórica.</string>
+    <string name="fechaTest">20 sep. 2018</string>
+    <string name="argumento">Argumento</string>
+    <string name="resumen">Resumen</string>
+    <string name="generos">Generos</string>
+    <string name="informacion">Información</string>
+    <string name="presuspuesto">Presupuesto</string>
+    <string name="total_recadudado">Ingresos: $</string>
+    <string name="reparto_principal">Reparto principal</string>
+    <string name="director">Director</string>
+    <string name="imagenes">Imagenes</string>
+    <string name="similares">Similares</string>
+    <string name="coleccion">Coleccion</string>
+    <string name="peliculas_de_la_coleccion">Peliculas De La Coleccion</string>
+    <string name="titulo_original">Titulo original</string>
+    <string name="tituloOriginalTest">Jurassic World: Fallen Kingdom</string>
+    <string name="estado_actual">Estado actual</string>
+    <string name="duracion">Duracion</string>
+    <string name="estrenada">Estrenada</string>
+    <string name="valorVacio">-</string>
+    <string name="fecha_de_estreno">Fecha de estreno</string>
+    <string name="idioma">Idioma</string>
+    <string name="p_gina_web">Página web</string>
+    <string name="lema_de_la_pelicula">Lema de la pelicula</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="equipo_principal">Equipo Principal</string>
+    <string name="ultimas_noticias">Ultimas noticias</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="valorar">Valorar</string>
+    <string name="duracion_de_cada_capitulo">Duracion de cada capitulo</string>
+    <string name="duracion_de_la_serie">Duracion de la serie</string>
+    <string name="fecha_de_emision_del_ultimo_capitulo">Fecha de emision del ultimo capitulo</string>
+    <string name="cantidad_de_temporadas">Cantidad de temporadas</string>
+    <string name="cantidad_de_capitulos">Cantidad de capitulos</string>
+    <string name="popularidad">Popularidad</string>
+    <string name="puntuaci_n">Puntuación</string>
+    <string name="creador">Creador</string>
+    <string name="creador_de_la_serie">Creador de la serie</string>
+</resources>

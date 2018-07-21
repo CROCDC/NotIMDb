@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayoutContenedor_fragmentpuntuarlapelicula"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroTransparente"
+
+    tools:context=".View.Fragments.Pelicula.ValorarLaPeliculaFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewContenedorDelPuntuador_fragmentpuntuarlapelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/teal"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/puntuaci_n"
+                android:textColor="@color/blanco"
+                android:textSize="20sp" />
+
+            <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/RatingBarPuntuador_fragmentpuntuarlapelicula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                app:srb_clearRatingEnabled="true"
+                app:srb_clickable="true"
+                app:srb_isIndicator="false"
+                app:srb_numStars="5"
+                app:srb_rating="0"
+                app:srb_scrollable="false"
+                app:srb_starHeight="40dp"
+                app:srb_starPadding="6dp"
+                app:srb_starWidth="40dp"
+                app:srb_stepSize="0.5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFijoEliminarValoracion_fragmentpuntuarlapelicula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toLeftOf="@id/textViewFijoAplicarValoracion_fragmentpuntuarlapelicula"
+                    android:text="@string/eliminar"
+                    android:textColor="@color/negro" />
+
+                <TextView
+                    android:id="@+id/textViewFijoAplicarValoracion_fragmentpuntuarlapelicula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/aplicar"
+                    android:textColor="@color/negro" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
