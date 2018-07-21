@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    tools:context=".View.Fragments.ParaViewPager.ViewPagerContenidoFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewContenedor_fragmentviewpagercontenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/imageViewBackground_fragmentcontenidoviewpager"
+                android:layout_width="380dp"
+                android:layout_height="214dp"
+                android:src="@drawable/background" />
+
+            <ImageView
+                android:id="@+id/imageViewPlay_fragmentcontenidoviewpager"
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="53dp"
+                android:src="@drawable/play" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutBarra_fragmentcontenidoviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/textViewTituloDelContenido_fragmentcontenidoviewpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/blanco" />
+
+                <!--   <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/textViewPuntajeDelContenido_fragmentcontenidoviewpager"
+                    android:src="@drawable/star" />-->
+
+                <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/RatingBarPuntaje_fragmentviewpagercontenido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textViewTituloDelContenido_fragmentcontenidoviewpage"
+                    app:srb_clearRatingEnabled="true"
+                    app:srb_clickable="false"
+                    app:srb_isIndicator="false"
+                    app:srb_numStars="5"
+                    app:srb_rating="2"
+                    app:srb_scrollable="false"
+                    app:srb_starHeight="20dp"
+                    app:srb_starPadding="1dp"
+                    app:srb_starWidth="20dp"
+                    app:srb_stepSize="0.5" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewPoster_fragmentcontenidoviewpager"
+                android:layout_width="90dp"
+                android:layout_height="137dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/poster" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

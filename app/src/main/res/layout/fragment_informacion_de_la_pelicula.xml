@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".View.Fragments.Pelicula.InformacionDeLaPeliculaFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/informacion"
+            android:textColor="@color/blanco"
+            android:textSize="25sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewFijoTituloOriginal_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_original" />
+
+            <TextView
+                android:id="@+id/textViewTituloOriginalDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoTituloOriginal_fragmentinformaciondelapelicula"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textviewFijoLema_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTituloOriginalDeLaPelicula_fragmentinformaciondelapelicula"
+                android:text="@string/lema_de_la_pelicula" />
+
+            <TextView
+                android:id="@+id/textViewLemaDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewFijoLema_fragmentinformaciondelapelicula"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+
+            <TextView
+                android:id="@+id/textViewFijoEstadoActual_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewLemaDeLaPelicula_fragmentinformaciondelapelicula"
+                android:layout_marginTop="6dp"
+                android:text="@string/estado_actual" />
+
+            <TextView
+                android:id="@+id/textViewEstadoActualDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoEstadoActual_fragmentinformaciondelapelicula"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewFijoDuracion_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoEstadoActual_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/duracion" />
+
+            <TextView
+                android:id="@+id/textViewDuracionDeLaPelicula_fragmentinformaciondelapelicula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoDuracion_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoFechaDeEstreno_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEstadoActualDeLaPelicula_fragmentinformaciondelapelicula"
+                android:text="@string/fecha_de_estreno" />
+
+            <TextView
+                android:id="@+id/textViewFechaDeEstrenoDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoFechaDeEstreno_fragmentinformaciondelapelicula"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+
+                android:id="@+id/textViewFijoIdioma_fragmentinformaciondelapelicula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoFechaDeEstreno_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/idioma"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/textViewIdiomaDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoIdioma_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+
+            <TextView
+                android:id="@+id/textViewFijoPresupuesto_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFechaDeEstrenoDeLaPelicula_fragmentinformaciondelapelicula"
+                android:text="@string/presuspuesto" />
+
+            <TextView
+                android:id="@+id/textViewPresupuestoDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoPresupuesto_fragmentinformaciondelapelicula"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoIngresos_fragmentinformaciondelapelicula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoPresupuesto_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/ingresos"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/textViewIngresosDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoIngresos_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoPaginaWeb_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPresupuestoDeLaPelicula_fragmentinformaciondelapelicula"
+                android:text="@string/p_gina_web" />
+
+            <WebView
+                android:id="@+id/webViewPaginaDeLaPelicula_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoPaginaWeb_fragmentinformaciondelapelicula"
+                android:textColor="@color/negro">
+
+            </WebView>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/textoPlano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/generos"
+            android:textSize="20sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewListaDeCategorias_fragmentinformaciondelapelicula"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

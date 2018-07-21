@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="15dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewPosterDeLaContenido_celdacontenido"
+                android:layout_width="120dp"
+                android:layout_height="175dp"
+                android:src="@drawable/poster" />
+
+            <TextView
+                android:id="@+id/textViewTituloDelContenido_celdacontenido"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textColor="@color/blanco" />
+
+            <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/RatingBarPuntajeDelContenido_celdacontenido"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:srb_clearRatingEnabled="true"
+                app:srb_clickable="false"
+                app:srb_isIndicator="false"
+                app:srb_numStars="5"
+                app:srb_rating="2"
+                app:srb_scrollable="false"
+                app:srb_starHeight="20dp"
+                app:srb_starPadding="1dp"
+                app:srb_starWidth="20dp"
+                app:srb_stepSize="0.5" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

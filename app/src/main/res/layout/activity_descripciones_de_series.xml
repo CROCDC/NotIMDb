@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".View.Activitys.DescripcionesDeSeriesActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            >
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/contenedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary">
+
+
+                        <ImageView
+                            android:id="@+id/imageViewBackground_activitydescripcionesdeseries"
+                            android:layout_width="380dp"
+                            android:layout_height="205dp"
+                            android:src="@drawable/background" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/circleImageViewPosterDeLaSerie_activivtydescripcionesdeseries"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_alignBaseline="@id/imageViewBackground_activitydescripcionesdeseries"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="140dp"
+                            android:src="@drawable/poster"
+                            app:civ_border_color="@color/blanco"
+                            app:civ_border_width="2dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageViewBackground_activitydescripcionesdeseries">
+
+
+                            <TextView
+                                android:id="@+id/textViewTituloDeLaSerie_activitydescripcionesdeseries"
+                                style="@style/textoPlano"
+                                android:layout_width="370dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="40dp"
+                                android:text="@string/tituloTest"
+                                android:textSize="25sp" />
+
+                            <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/RatingBarPuntaje_activitydescripcionesdeseries"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/textViewTituloDeLaSerie_activitydescripcionesdeseries"
+                                android:layout_marginBottom="4dp"
+                                app:srb_clearRatingEnabled="true"
+                                app:srb_clickable="false"
+                                app:srb_isIndicator="false"
+                                app:srb_numStars="5"
+                                app:srb_rating="2"
+                                app:srb_scrollable="false"
+                                app:srb_starHeight="30dp"
+                                app:srb_starPadding="4dp"
+                                app:srb_starWidth="30dp"
+                                app:srb_stepSize="0.5" />
+
+                            <TextView
+                                android:id="@+id/textViewFijoValorar_activitydescripcionesdeseries"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:text="@string/valorar"
+                                android:textColor="@color/blanco"
+                                android:textSize="23sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:id="@+id/imageViewPlay_activitydescripcionesdeseries"
+                            android:layout_width="94dp"
+                            android:layout_height="94dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="58dp"
+                            android:src="@drawable/play" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/contenedor"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/textoPlano"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/resumen"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerNavegacionSeries_activitydescripcionesdeseries"
+                android:layout_width="match_parent"
+                android:layout_height="900dp"
+                android:layout_marginTop="40dp">
+
+
+            </android.support.v4.view.ViewPager>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablLayoutMenuSeries_activitydescipcionesdeseries"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        app:layout_anchor="@id/viewPagerNavegacionSeries_activitydescripcionesdeseries">
+
+
+    </android.support.design.widget.TabLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

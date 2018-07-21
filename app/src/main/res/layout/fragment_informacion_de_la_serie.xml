@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".View.Fragments.Serie.InformacionDeLaSerieFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textViewFijoTituloOriginal_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_original" />
+
+            <TextView
+                android:id="@+id/textViewTituloOriginalDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoTituloOriginal_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+
+            <TextView
+                android:id="@+id/textViewFijoPopularidad_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTituloOriginalDeLaSerie_fragmentinformaciondelaserie"
+                android:text="@string/popularidad"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/textViewPopularidadDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoPopularidad_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+
+            <TextView
+                android:id="@+id/textViewFijoCantidadDeTemporadas_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPopularidadDeLaSerie_fragmentinformaciondelaserie"
+                android:text="@string/cantidad_de_temporadas" />
+
+            <TextView
+
+                android:id="@+id/textViewCantidadDeTemporadas_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoCantidadDeTemporadas_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoCantidadDeCapitulos_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoCantidadDeTemporadas_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/cantidad_de_capitulos" />
+
+            <TextView
+                android:id="@+id/textViewCantidadDeCapitulos_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoCantidadDeCapitulos_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+
+            <TextView
+                android:id="@+id/textViewFijoEstadoActual_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCantidadDeTemporadas_fragmentinformaciondelaserie"
+                android:text="@string/estado_actual" />
+
+            <TextView
+                android:id="@+id/textViewEstadoActualDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoEstadoActual_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/textViewFijoIdioma_fragmentinformaciondelapelicula"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoEstadoActual_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/idioma" />
+
+            <TextView
+                android:id="@+id/textViewIdiomaDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoIdioma_fragmentinformaciondelapelicula"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoDuracionCapitulo_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEstadoActualDeLaSerie_fragmentinformaciondelaserie"
+                android:text="@string/duracion_de_cada_capitulo" />
+
+            <TextView
+                android:id="@+id/textViewDuracionCapitulo_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoDuracionCapitulo_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoDuracionSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoDuracionCapitulo_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/duracion_de_la_serie" />
+
+            <TextView
+                android:id="@+id/textViewDuracionTotalDeLaSerie_fragmentinformaciondelaserie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoDuracionSerie_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoFechaEstreno_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDuracionCapitulo_fragmentinformaciondelaserie"
+                android:text="@string/fecha_de_estreno" />
+
+            <TextView
+                android:id="@+id/textViewFechaDeEstrenoDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoFechaEstreno_fragmentinformaciondelaserie"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/textViewFijoFechaEmisionUltimo_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewFijoFechaEstreno_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/fecha_de_emision_del_ultimo_capitulo" />
+
+            <TextView
+                android:id="@+id/textViewFechaDeEmisionDelUltimoCapitlo_fragmentinformaciondelaserie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoFechaEmisionUltimo_fragmentinformaciondelaserie"
+                android:layout_marginLeft="250dp"
+                android:text="@string/valorVacio"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/textViewFijoPaginaWeb_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFechaDeEstrenoDeLaSerie_fragmentinformaciondelaserie"
+                android:text="@string/p_gina_web" />
+
+            <WebView
+                android:id="@+id/webViewPaginaDeLaSerie_fragmentinformaciondelaserie"
+                style="@style/textoPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFijoPaginaWeb_fragmentinformaciondelaserie">
+
+            </WebView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/textoPlano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/generos"
+            android:textSize="20sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewListaDeCategorias_fragmentinformaciondelaserie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
