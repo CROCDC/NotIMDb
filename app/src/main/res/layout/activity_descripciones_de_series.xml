@@ -132,10 +132,7 @@
                             android:text="@string/resumen"
                             android:textSize="20sp" />
 
-                        <TextView
-                            android:id="@+id/"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
+
                     </LinearLayout>
 
                 </LinearLayout>
